@@ -1,0 +1,60 @@
+// variables 
+$colorAzulOscuro: #1d252c;
+$colorAzultClaro:  rgb(2, 111, 255);
+$colorTextGris: #6d6d6d; 
+$colorFondo:#fafafa;
+$colorCard:#f4fbff;
+$fontBold: 'roboto-bold';
+$fontMedium:'roboto-medium';
+$fontRegular: 'roboto-regular'; 
+
+
+
+@font-face{
+    font-family: 'roboto-bold';
+    src: url('/src/fonts/Roboto-Bold.ttf');
+}
+@font-face{
+    font-family: 'roboto-medium';
+    src: url('/src/fonts/Roboto-Medium.ttf');
+}
+@font-face{
+    font-family: 'roboto-regular';
+    src: url('/src/fonts/Roboto-Regular.ttf');
+}
+
+@mixin subTitle {
+    font-family: $fontMedium;
+    font-size: 40px;
+    margin: 30px auto 20px;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    display: block;
+    color: #026fff;
+    text-transform: capitalize;
+}
+
+@keyframes  btn {
+    0%{
+        background-color: white;
+        color: $colorAzultClaro;
+
+    }
+    100%{
+        background-color: $colorAzultClaro;
+        color: white;
+
+    }
+
+}
+@keyframes submit   {
+    0%{
+        color:  white;
+        background-color: #026fff;
+    }
+    100%{
+        color: $colorAzultClaro;
+        background-color: white;
+    }
+}

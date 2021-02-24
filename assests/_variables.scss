@@ -1,0 +1,411 @@
+/* Variables */
+
+/* Colors */
+$base-color: #000;
+$color-claro: #ddd9cd;
+
+/* Breakpoints */
+$medium: "(min-width: 760px)";
+$large: "(min-width: 1024px)";
+
+/* Fonts */
+$baskerville: "Libre Baskerville", serif;
+$muli: "Arvo", serif;
+// $muli: 'Muli', sans-serif;
+
+/*
+-------------
+Custom
+-------------
+reset.css v2.0 http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
+&&
+normalize.css v2.1.3 | MIT License | git.io/normalize
+*/
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+:focus,
+a:active,
+a:hover {
+  outline: 0;
+}
+::selection {
+  background-color: #000;
+  color: #666;
+  text-shadow: none;
+}
+a {
+  color: #007fff;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: 0.22s linear all;
+  -moz-transition: 0.22s linear all;
+  -o-transition: 0.22s linear all;
+  -ms-transition: 0.22s linear all;
+  transition: 0.22s linear all;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 600;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: 700;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+hr,
+input[type="search"] {
+  -moz-box-sizing: content-box;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  overflow-x: auto;
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  font-size: 0.875em;
+  background: #fcfcfc;
+  white-space: pre;
+  word-wrap: normal;
+  margin: 1.6em 0;
+  padding: 1.25em;
+}
+q {
+  quotes: \201c \201d \2018 \2019;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+@mixin banderitas {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  margin: 0;
+  padding: 4px;
+  border: 1px solid;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: super;
+  background: #ddd9cd;
+  transform: skew(-15deg, 0deg);
+}
+
+@mixin containerCourses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  margin: 25px 0px;
+  justify-content: center;
+}
+@mixin CoursesEnvolture {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  text-align: start;
+  padding-left: 20px;
+  width: 100%;
+  max-width: 1100px;
+  height: 300px;
+  white-space: nowrap;
+  @media (max-width: 1235px) {
+    padding-left: 10px;
+  }
+    @media (max-width:1025px){
+      width: 75%;
+  }
+}
+
+@mixin CoursesEnvoltureInterna {
+  display: inline-block;
+  width: 100%;
+  max-width: 1000px;
+  height: 280px;
+  white-space: nowrap;
+  overflow-y: hidden;
+  z-index: 2;
+  margin-left: -230px;
+  @media (max-width: 1491px) {
+    height: 260px;
+    margin-top: 20px;
+  }
+  @media (max-width: 1376px) {
+    max-width: 900px;
+  }
+  @media (max-width:1219px){
+    max-width: 800px;
+  }
+  @media (max-width:1219px) {
+    max-width: 700px;
+  }
+}
+
+@mixin tituloCourses($top, $bottom, $left, $right) {
+  max-width: 230px;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 25px;
+  display: inline-block;
+  transform: rotate(90deg);
+  position: relative;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding: 10px;
+  @media (max-width: 1491px) {
+    top: -85px;
+  }
+  @media  (max-width:1235px){
+    left: -147px;
+    top: -87px;
+  }
+    @media (max-width:1025px){
+    left: -143px;
+    top: -89px;
+    font-size: 16px;
+  }
+}
+@mixin listadoCourses {
+  max-width: 230px;
+  width: 100%;
+  @media (max-width: 1491px) {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script> -->
+    <!-- <script src=" https://unpkg.com/@reactivex/rxjs@version/dist/global/Rx.js"></script> -->
+    <script  src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
+    <link rel="stylesheet" href="./css/normilize.css">
+    <link rel="stylesheet" href="./css/Utilidades/utilidades.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DaniePrieto / portafolio</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <h1 class="header--titulo">daniel prieto</h1>
+        <nav class="header--menu">
+            <div class="header--menu__movil">
+                <button onclick="Menu()"  type="button" value >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                        class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+            <ul id="nav"   class="header--menu__listado">
+                <li onclick="resetMenu()"  ><a href="#portafolio">portafolio</a></li>
+                <li onclick="resetMenu()"  ><a href="#experiencia">Experiencia</a></li>
+                <li onclick="resetMenu()"  ><a href="#justos">Trabajemos juntos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main--principal">
+            <h2 class="main--principal__titulo">principal</h2>
+            <div class="main--principal__info">
+            <p>hola! soy</p>
+            <span>danielprieto</span> 
+            <p>desarrollador</p>
+            <span> junior </span>
+            <p>practicando para un mejor mañana</p>
+            </div>
+
+            <div class="main--principal__contentImg">
+                <img src="./src/img/urban.png" alt="fondo_principal" height="575">
+            </div>
+        </section>
+        <section class="main--proyectos" id="portafolio">
+            <h2 class="main--proyectos__titulo">portafolio (proyectos destacados)</h2>
+            <div class="main--proyectos__caja">
+                <div class="proyectos--caja__info">
+                    <h3 class="caja--info__titulo">platzi video</h3>
+                    <p class="caja--info__subtitle">react native / react</p>
+                    <p class="caja--info__fecha">fecha <small><time>01/07/2018</time></small></p>
+                    <div class="caja--info__link"><p>puedes verlo en :</p><a
+                                href="www.platzi.com/native">link</a></div>
+                    <p class="caja--info__descripcion">Platzi Video fue el resultado de 3 meses de trabajo para crear la
+                        mejor app para enseñar el
+                        funcionamiento de React y
+                        React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, este
+                        proyecto ha sido el ejemplo
+                        de
+                        futuros creadores de aplicaciones multiplataforma.
+                        El evento más grande sobre gente que quiere aprender más de internet. En este evento te comparto
+                        cómo tener una vida
+                        de
+                        constante aprendizaje.</p>
+                </div>
+                <div class="proyectos--caja__img">
+                    <img src="./src/img/platzi-video-react-native.png" alt="imagen_proyecto">
+                </div>
+            </div>
+        </section>
+        <section class="main--experiencia" id="experiencia">
+            <h2 class="main--experiencia__titulo">mas sobre mi experiencia</h2>
+            <div class="main--experiencia__container">
+                <article class="experiencia--container__card">
+                    <figure>
+                        <img src="./src/img/platzi-conf.jpg" alt="imagen_card" />
+                    </figure>
+                    <div class="container--card__info">
+                        <h3 class="card--info__titulo">platzi conf mexico 2018</h3>
+                        <p class="card--info__text">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                            It has roots in a piece of
+                            classical Latin literature
+                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                            Hampden-Sydney College in Virginia</p>
+                        <a href="#" class="card--info__btn">ver plática</a>
+                    </div>
+                </article>
+
+                <article class="experiencia--container__card">
+                    <figure>
+                        <img src="./src/img/platzi-conf.jpg" alt="imagen_card">
+                    </figure>
+                    <div class="container--card__info">
+                        <h3 class="card--info__titulo">platzi conf mexico 2018</h3>
+                        <p class="card--info__text">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                            It has roots in a
+                            piece of
+                            classical Latin literature
+                            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                            Hampden-Sydney College in Virginia</p>
+                        <a href="/" class="card--info__btn">ver plática</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="main--tecnologias">
+            <div class="tecnologias--container">
+                <div class="tecnologias--continer__list">
+                    <ul class="container--list">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+                <div class="tecnologias--continer__img">
+                    <img src="./src/img/open-doodles-zombieing.png" alt="img-tecnologias">
+                </div>
+                <div class="tecnologias--continer__list">
+                    <ul class="container--list">
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                        <li>lorem</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="main--contactenos" id="justos">
+            <div class="main--contactenos__container">
+                <h2>¿Creamos algo juntos?</h2>
+                <form class="main--contactenos__formulario">
+                    <input placeholder="Déjame tu email" type="email">
+                    <button type="submit">enviar</button>
+                </form>
+                <div class="contactenos--container__list">
+                    <ul>
+                        <li><a href="https://www.facebook.com/daniel.wilches.90"><img src="./src/img/facebook.svg"
+                                    alt="facebook_img" srcset=""></a>
+                        </li>
+                        <li><a href="https://github.com/DanielWilches"><img src="./src/img/github.svg" alt="github_img"
+                                    srcset=""></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/danielwilches.dev/"><img src="./src/img/instagram.svg"
+                                    alt="instagram_img" srcset=""></a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer--info">
+            <p class="footer--info__text">Curso de desarrollo web-tomado 2021</p>
+            <ul class="footer--info__list">
+                <li>platzi</li>
+            </ul>
+        </div>
+        <div class="footer--info__diseñado">
+            <p>designed platzi </p>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
